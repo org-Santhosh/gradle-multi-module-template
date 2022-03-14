@@ -17,7 +17,7 @@ jobs:
         with:
           java-version: 8
           distribution: 'adopt'
-          #cache: gradle
+          cache: gradle
                 
       - name: Step 4 - Granting permissions to gradlew file
         run: chmod +x ./gradlew
@@ -29,5 +29,10 @@ jobs:
           #gradle-version: 4.10
           
       - name: Step 6 - Listing the build file name
-        run: 
+        run: |
             ls '${{ github.workspace }}'
+            ls '${{ github.workspace }}'/admin
+            ls '${{ github.workspace }}'/common-model
+            ls '${{ github.workspace }}'/dao
+            ls '${{ github.workspace }}'/rest  
+            
