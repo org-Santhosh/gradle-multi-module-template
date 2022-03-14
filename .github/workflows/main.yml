@@ -32,8 +32,11 @@ jobs:
       - name: Step 6 - Listing the build file name
         run: |
             ls '${{ github.workspace }}'
-            ls '${{ github.workspace }}'/admin
-            ls '${{ github.workspace }}'/common-model
-            ls '${{ github.workspace }}'/dao
-            ls '${{ github.workspace }}'/rest  
+            echo "-----------------------------"
+            ls '${{ github.workspace }}'/admin/build
+            echo "-----------------------------"
+            ls '${{ github.workspace }}'/common-model/build
+            echo "-----------------------------"
+            ls '${{ github.workspace }}'/dao/build
+            ls '${{ github.workspace }}'/rest/build
             
