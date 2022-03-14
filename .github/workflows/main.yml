@@ -17,7 +17,7 @@ jobs:
         with:
           java-version: 8
           distribution: 'adopt'
-          cache: gradle
+          #cache: gradle
                 
       - name: Step 4 - Granting permissions to gradlew file
         run: chmod +x ./gradlew
