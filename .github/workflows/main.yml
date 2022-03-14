@@ -30,4 +30,4 @@ jobs:
           
       - name: Step 6 - Listing the build file name
         run: 
-            ls '${{ github.workspace }}'/build/libs
+            ls '${{ github.workspace }}'
