@@ -33,10 +33,11 @@ jobs:
         run: |
             ls '${{ github.workspace }}'
             echo "-----------------------------"
-            ls '${{ github.workspace }}'/admin/build
+            ls '${{ github.workspace }}'/admin/build/libs
             echo "-----------------------------"
-            ls '${{ github.workspace }}'/common-model/build
+            ls '${{ github.workspace }}'/common-model/build/libs
             echo "-----------------------------"
-            ls '${{ github.workspace }}'/dao/build
-            ls '${{ github.workspace }}'/rest/build
+            ls '${{ github.workspace }}'/dao/build/libs
+            echo "-----------------------------"
+            ls '${{ github.workspace }}'/rest/build/libs
             
